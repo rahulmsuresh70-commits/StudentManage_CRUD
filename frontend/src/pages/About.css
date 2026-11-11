@@ -1,0 +1,97 @@
+.about-banner {
+  background: linear-gradient(120deg, #edf1ff, #f7f8ff);
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.about-banner span {
+  color: #435cf5;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.about-banner h1 {
+  color: #182442;
+  font-size: 43px;
+  margin: 18px 0;
+}
+
+.about-banner p {
+  color: #778197;
+  font-size: 15px;
+}
+
+.about-content {
+  max-width: 1150px;
+  margin: auto;
+  padding: 75px 25px;
+}
+
+.about-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-bottom: 65px;
+}
+
+.about-icon {
+  background: #e9edff;
+  color: #435cf5;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.about-intro h2 {
+  color: #182442;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.about-intro p {
+  color: #778197;
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 800px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.about-card {
+  border: 1px solid #e9edf5;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.about-card svg {
+  color: #435cf5;
+}
+
+.about-card h3 {
+  margin: 20px 0 12px;
+  color: #253452;
+}
+
+.about-card p {
+  color: #778197;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 750px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-intro {
+    flex-direction: column;
+  }
+
+  .about-banner h1 {
+    font-size: 32px;
+  }
+}

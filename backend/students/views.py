@@ -8,7 +8,7 @@ from .models import Student
 from .serializers import StudentSerializer
 
 
-# CREATE + READ ALL STUDENTS
+
 class StudentListCreateView(ListCreateAPIView):
 
     queryset = Student.objects.all().order_by('-id')
@@ -16,7 +16,7 @@ class StudentListCreateView(ListCreateAPIView):
     permission_classes = [AllowAny]
 
 
-# READ ONE + UPDATE + DELETE STUDENT
+
 class StudentDetailView(RetrieveUpdateDestroyAPIView):
 
     queryset = Student.objects.all()
